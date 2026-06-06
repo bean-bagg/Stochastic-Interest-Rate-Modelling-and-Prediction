@@ -47,6 +47,8 @@ Stochastic-Interest-Rate-Modelling-and-Prediction/
 ├── train_data.csv         # Training data (2016-05-19 to 2024-04-26)
 ├── test_data.csv          # Full test data with all tenors (2024-04-29 to 2026-04-29)
 ├── test_data_3M.csv       # Test data with 3M yield only (for prediction challenge)
+├── predicted_yield_       # Predicted Yield Curve
+|  curve_from_test_3M.csv
 └── README.md
 ```
 
