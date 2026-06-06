@@ -121,7 +121,7 @@ This is useful for interpreting **shock persistence** (higher $\kappa$ → faste
 **2. Cross-Sectional Least Squares** *(used for prediction)*
 Calibrates $(\kappa, \theta, \sigma)$ by minimising the mean squared error between CIR-implied zero-coupon yields and observed yields **across all training dates and tenors simultaneously**, using the 3M rate as the state variable. A random search over 25,000 candidate parameter sets is followed by Nelder-Mead refinement. A small penalty term discourages — but does not prohibit — Feller condition violations:
 
-$$\text{loss} = \text{MSE} + 10^{-4} \cdot \max\!\left(0,\; \sigma^2 - 2\kappa\theta\right)^2$$
+$$\text{loss} = \text{MSE} + 10^{-4} \cdot \max\left(0, \sigma^2 - 2\kappa\theta\right)^2$$
 
 ### C. Prediction Challenge: Reconstruct the Curve from Only 3M
 
